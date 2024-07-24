@@ -7,11 +7,12 @@ class Solution
         
 		int a = 0, b = 1;
 		
-		while(N-- > 1)
+		while(N> 1)
 		{
 			int sum = a + b;
 			a = b;
 			b = sum;
+            N--;
 		}
         return b;
     }
